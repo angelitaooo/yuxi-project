@@ -16,17 +16,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Mr. Joe</td>
-          <td>Doe</td>
-        </tr>
-        <tr>
-          <td>Mr. Joe</td>
-          <td>Doe</td>
-        </tr>
-        <tr>
-          <td>Mr. Joe</td>
-          <td>Doe</td>
+        <tr *ngFor="let teacher of teachers">
+          <td>{{teacher.firstName}}</td>
+          <td>{{teacher.lastName}}</td>
         </tr>
       </tbody>
     </table>

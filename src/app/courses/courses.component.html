@@ -3,7 +3,7 @@
 <div class="row">
   <div class="small-12 large-offset-3 large-6 columns">
     <h3>Course List</h3>
-    <a href="#" class="button float-right">Add new course</a>
+    <a [routerLink]="['/courses/:id']" class="button float-right">Add new course</a>
     <table>
       <thead>
         <tr>
@@ -22,23 +22,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Content Goes Here</td>
-          <td>33.</td>
-          <td>12/01/2017</td>
+        <tr *ngFor="let course of courses">
+          <td>{{course.name}}</td>
+          <td>{{course.duration}}</td>
+          <td>{{course.date}}</td>
           <td><span class="success badge">&nbsp;</span></td>
-        </tr>
-        <tr>
-          <td>Content Goes Here</td>
-          <td>44.</td>
-          <td>12/01/2017</td>
-          <td><span class="alert badge">&nbsp;</span></td>
-        </tr>
-        <tr>
-          <td>Content Goes Here</td>
-          <td>12.</td>
-          <td>12/01/2017</td>
-          <td><span class="warning badge">&nbsp;</span></td>
         </tr>
       </tbody>
     </table>

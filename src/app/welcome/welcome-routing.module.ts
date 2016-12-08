@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent }    from './welcome.component';
 
 const welcomeRoutes: Routes = [
-
+  { path: 'welcome',  component: WelcomeComponent }
 ];
 
 @NgModule({

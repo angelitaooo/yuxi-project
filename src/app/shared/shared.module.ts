@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
   imports: [
     CommonModule
   ],
-  declarations: [SharedComponent, NavigationComponent]
+  declarations: [SharedComponent, NavigationComponent],
+  exports: [NavigationComponent]
 })
 export class SharedModule { }

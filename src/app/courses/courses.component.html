@@ -1,0 +1,37 @@
+<app-navigation></app-navigation>
+<!-- Course List -->
+<div class="row">
+  <div class="small-12 large-offset-3 large-6 columns">
+    <h3>Course List</h3>
+    <a [routerLink]="['/courses/:id']" class="button float-right">Add new course</a>
+    <table>
+      <thead>
+        <tr>
+          <th width="200">
+            <a href="#">Name</a>
+          </th>
+          <th>
+            <a href="#">Hours</a>
+          </th>
+          <th width="200">
+            <a href="#">Start Date</a>
+          </th>
+          <th>
+            &nbsp;
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let course of courses">
+          <td>{{course.name}}</td>
+          <td>{{course.duration}}</td>
+          <td>{{course.date}}</td>
+          <td><span class="success badge">&nbsp;</span></td>
+          <td><a [routerLink]="['/courses', course.id]"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- /Course List -->

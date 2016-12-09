@@ -1,0 +1,29 @@
+<app-navigation></app-navigation>
+<!-- Teachers List -->
+<div class="row">
+  <div class="small-12 large-offset-3 large-6 columns">
+    <h3>Teacher List</h3>
+    <a href="#" class="button float-right">Add new teacher</a>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <a href="#">Name</a>
+          </th>
+          <th>
+            <a href="#">Last Name</a>
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let teacher of teachers">
+          <td>{{teacher.firstName}}</td>
+          <td>{{teacher.lastName}}</td>
+          <td><a [routerLink]="['/teachers', teacher.id]"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- /Teachers List -->

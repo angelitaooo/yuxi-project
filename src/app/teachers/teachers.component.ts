@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UUID } from 'angular2-uuid';
 
 @Component({
   selector: 'app-teachers',
@@ -8,17 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class TeachersComponent implements OnInit {
   teachers = [
     {
-      id: 1,
+      id: UUID.UUID(),
       firstName: 'Angela',
       lastName: 'Ordonez'
     },
     {
-      id: 2,
+      id: UUID.UUID(),
       firstName: 'alejandro',
       lastName: 'nanez'
     },
     {
-      id: 3,
+      id: UUID.UUID(),
       firstName: 'mapale',
       lastName: 'wayne'
     }

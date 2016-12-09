@@ -11,7 +11,7 @@ export class TeacherDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.id = this.route.params.value.id;
+    this.id = this.route.snapshot.params['id'];
   }
 
 }

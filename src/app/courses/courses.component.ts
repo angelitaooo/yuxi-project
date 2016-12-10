@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UUID } from 'angular2-uuid';
+import { Course } from './course';
+import { CourseService } from './course.service';
 
 @Component({
   selector: 'app-courses',
@@ -8,26 +9,12 @@ import { UUID } from 'angular2-uuid';
 })
 export class CoursesComponent implements OnInit {
 
-  courses = [
-    {
-      id: UUID.UUID(),
-      name: 'angular 2',
-      date: '12/01/2016',
-      duration: 34,
-      teacher: 1
-    },
-    {
-      id: UUID.UUID(),
-      name: 'react',
-      date: '12/02/2016',
-      duration: 20,
-      teacher: 2
-    }
-  ];
+  courses: Course[];
 
-  constructor() { }
+  constructor(private courseService: CourseService) { }
 
   ngOnInit() {
+    this.courses = this.courseService.getCourses();
   }
 
 }

@@ -6,13 +6,23 @@
       <div class="row">
         <div class="medium-12 columns">
           <label for="first-name">First Name</label>
-          <input id="first-name" name="first-name" type="text" placeholder="First name" />
+          <input
+            id="first-name"
+            name="first-name"
+            type="text"
+            placeholder="First name"
+            value={{teacher.firstName}}/>
         </div>
       </div>
       <div class="row">
         <div class="medium-12 columns">
           <label for="last-name">Last Name</label>
-          <input id="last-name" name="last-name" type="text" placeholder="Last name" />
+          <input
+            id="last-name"
+            name="last-name"
+            type="text"
+            placeholder="Last name"
+            value={{teacher.lastName}} />
         </div>
       </div>
       <div class="row">
@@ -20,7 +30,7 @@
           <button type="submit" class="button expanded">Save</button>
         </div>
         <div class="small-12 medium-3 columns float-left">
-          <button type="submit" class="button alert expanded">Cancel</button>
+          <a [routerLink]="['/teachers']" class="button alert expanded">Cancel</a>
         </div>
       </div>
     </form>

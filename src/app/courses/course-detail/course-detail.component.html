@@ -1,7 +1,7 @@
 <!--  Course Form -->
 <div class="row">
   <div class="small-12 large-offset-3 large-6 columns">
-    <h3>Course Form</h3>
+    <h3>Course Form {{id}}</h3>
     <form>
       <div class="row">
         <div class="medium-12 columns">
@@ -41,7 +41,7 @@
           <button type="submit" class="button expanded">Save</button>
         </div>
         <div class="small-12 medium-3 columns float-left">
-          <button type="submit" class="alert button expanded">Cancel</button>
+          <a [routerLink]="['/courses']" class="button alert expanded">Cancel</a>
         </div>
       </div>
     </form>

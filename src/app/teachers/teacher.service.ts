@@ -6,8 +6,6 @@ import { UUID } from 'angular2-uuid';
 export class TeacherService {
   teachers: Teacher[] = [
     new Teacher(UUID.UUID(), 'angela', 'ordonez'),
-    new Teacher(UUID.UUID(), 'firstName', 'lastName'),
-    new Teacher(UUID.UUID(), 'firstName', 'lastName')
   ];
 
   constructor() { }

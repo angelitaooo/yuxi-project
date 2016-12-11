@@ -17,7 +17,7 @@ Angular 2 Final Project for Yuxi Pacific.
 		- [ ] **Expired courses (red):** Courses that already happened
 - [x] The user can click in any course and update it:
 	- [x] The information will only be saved once the user clicks the **Save** button
-	- [x] Visual cues will also apply when the users updates the course date
+	- [ ] Visual cues will also apply when the users updates the course date
 - [x] The user can also add new courses
 
 #### Teachers

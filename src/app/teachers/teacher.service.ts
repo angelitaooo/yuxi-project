@@ -32,4 +32,22 @@ export class TeacherService {
 
     return result;
   }
+
+  addTeacher(teacher: Teacher) {
+    // Creating
+    if (!teacher.id) {
+      teacher.id = UUID.UUID();
+      this.teachers.push(teacher);
+    } else {
+      let teacherIndex;
+
+      this.teachers.forEach((t, index) => {
+        if (teacher.id === t.id) {
+          teacherIndex = index;
+        }
+      });
+
+      this.teachers.splice(teacherIndex, 1, teacher);
+    }
+  }
 }

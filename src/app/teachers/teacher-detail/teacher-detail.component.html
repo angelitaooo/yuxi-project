@@ -1,17 +1,24 @@
 <!-- Teacher Form -->
 <div class="row">
   <div class="small-12 large-offset-3 large-6 columns">
-    <h3>Teacher Form</h3>
-    <form>
+    <h3 *ngIf="isCreating">Create new teacher</h3>
+    <h3 *ngIf="!isCreating">Edit teacher</h3>
+    <form (ngSubmit)="formSubmit($event, teacherForm)" #teacherForm="ngForm">
       <div class="row">
         <div class="medium-12 columns">
           <label for="first-name">First Name</label>
           <input
             id="first-name"
-            name="first-name"
+            name="firstName"
             type="text"
             placeholder="First name"
-            value={{teacher.firstName}}/>
+            value={{newTeacherFirstName}}
+            [(ngModel)]="newTeacherFirstName"
+            #firstName="ngModel"
+            required />
+            <div *ngIf="firstName.errors?.required && firstName.touched" class="callout alert">
+              <p>First Name is required</p>
+            </div>
         </div>
       </div>
       <div class="row">
@@ -19,15 +26,21 @@
           <label for="last-name">Last Name</label>
           <input
             id="last-name"
-            name="last-name"
+            name="lastName"
             type="text"
             placeholder="Last name"
-            value={{teacher.lastName}} />
+            value={{newTeacherLastName}}
+            [(ngModel)]="newTeacherLastName"
+            #lastName="ngModel"
+            required />
+            <div *ngIf="lastName.errors?.required && lastName.touched" class="callout alert">
+              <p>Last Name is required</p>
+            </div>
         </div>
       </div>
       <div class="row">
         <div class="small-12 medium-3 columns float-left">
-          <button type="submit" class="button expanded">Save</button>
+          <button type="submit" class="button expanded" [disabled]="teacherForm.invalid">Save</button>
         </div>
         <div class="small-12 medium-3 columns float-left">
           <a [routerLink]="['/teachers']" class="button alert expanded">Cancel</a>

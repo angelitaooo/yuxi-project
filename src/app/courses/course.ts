@@ -1,14 +1,11 @@
-import { UUID } from 'angular2-uuid';
 
 export class Course {
-  id: string;
 
   constructor(
+    public id: string,
     public name: string,
     public date: string,
     public duration: number,
-    public teacher: number
-  ) {
-    this.id = UUID.UUID();
-  }
+    public teacher: string
+  ) {}
 }

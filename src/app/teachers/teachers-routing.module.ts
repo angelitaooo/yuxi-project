@@ -7,6 +7,7 @@ import { TeacherDetailComponent }  from './teacher-detail/teacher-detail.compone
 const teachersRoutes: Routes = [
   { path: 'teachers',  component: TeachersComponent },
   { path: 'teachers/:id',  component: TeacherDetailComponent },
+  { path: 'teachers/new', component: TeacherDetailComponent }
 ];
 
 @NgModule({

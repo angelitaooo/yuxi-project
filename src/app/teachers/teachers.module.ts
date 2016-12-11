@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { TeachersComponent } from './teachers.component';
 import { TeacherDetailComponent } from './teacher-detail/teacher-detail.component';
 import { TeachersRoutingModule } from './teachers-routing.module';
@@ -10,7 +11,8 @@ import { TeacherService } from './teacher.service';
   imports: [
     CommonModule,
     TeachersRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   declarations: [TeachersComponent, TeacherDetailComponent],
   providers: [TeacherService]

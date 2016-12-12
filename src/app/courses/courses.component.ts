@@ -26,6 +26,9 @@ export class CoursesComponent implements OnInit {
       case 'duration':
         this.courses = _.sortBy(this.courses, [(course) => course.duration ]);
         break;
+      case 'date':
+        this.courses = _.sortBy(this.courses, [(course) => course.date ]);
+        break;
     }
   }
 }

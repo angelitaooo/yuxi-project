@@ -14,7 +14,7 @@
             <a (click)="sortTable('duration')">Hours</a>
           </th>
           <th width="200">
-            <a href="#">Start Date</a>
+            <a (click)="sortTable('date')">Start Date</a>
           </th>
           <th>
             &nbsp;
@@ -26,7 +26,7 @@
         <tr *ngFor="let course of courses">
           <td>{{course.name}}</td>
           <td>{{course.duration}}</td>
-          <td>{{course.date}}</td>
+          <td>{{course.date | date}}</td>
           <td><span class="success badge">&nbsp;</span></td>
           <td><a [routerLink]="['/courses', course.id]"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
         </tr>

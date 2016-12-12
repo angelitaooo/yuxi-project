@@ -27,7 +27,7 @@
           <td>{{course.name}}</td>
           <td>{{course.duration}}</td>
           <td>{{course.date | date}}</td>
-          <td><span class="success badge">&nbsp;</span></td>
+          <td><app-course-status [date]="course.date"></app-course-status></td>
           <td><a [routerLink]="['/courses', course.id]"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
         </tr>
       </tbody>

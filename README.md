@@ -10,7 +10,7 @@ Angular 2 Final Project for Yuxi Pacific.
 
 #### Courses
 - [ ] The user can see all the courses available:
-	- [ ] Order them by name, duration or start date
+	- [x] Order them by name, duration or start date
 	- [ ] The list should provide visual cues to identify the status of the course in relation to the current date:
 		- [ ] **Future courses (green):** Courses that will start after 30 days
 		- [ ] **Upcoming courses (yellow):** Courses that will start within the next 30 days

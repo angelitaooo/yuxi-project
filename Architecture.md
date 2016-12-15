@@ -101,3 +101,7 @@ sortTable(sorter: string) {
   6.1 This is not a shared component because it is only used in courses component.
 7. Adding active routes for the navigation component.
 8. Adding loading animation in index.html.
+
+## Project Management
+1. I used Github projects to keep track of my work. [Boards](https://github.com/angelitaooo/yuxi-project/projects)
+2. I created a pull request for each "chunk" of work. I was easier for me to keep track of the progress using pull requests. [Pull Requests](https://github.com/angelitaooo/yuxi-project/pulls?utf8=%E2%9C%93&q=)

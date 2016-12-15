@@ -2,6 +2,9 @@
 
 Angular 2 Final Project for Yuxi Pacific.
 
+## Architecture / Thought Process
+I documented my solution in [Architecture.md](Architecture.md)
+
 ## Requirements
 
 #### Home View

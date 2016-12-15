@@ -105,3 +105,13 @@ sortTable(sorter: string) {
 ## Project Management
 1. I used Github projects to keep track of my work. [Boards](https://github.com/angelitaooo/yuxi-project/projects)
 2. I created a pull request for each "chunk" of work. It was easier for me to keep track of the progress using pull requests. [Pull Requests](https://github.com/angelitaooo/yuxi-project/pulls?utf8=%E2%9C%93&q=)
+
+## Links
+- [Angular Docs](https://angular.io/docs/ts/latest/)
+- [Angular Forms](https://toddmotto.com/angular-2-forms-template-driven)
+- [Development questions](http://stackoverflow.com/)
+- [Online tutorials](https://www.ng-book.com/2/)
+- [Angular 2 Forms and Validation](https://school.scotch.io/angular-2-forms-and-validation)
+- [Routing](https://school.scotch.io/routing-angular-2-applications)
+- [Insert, Remove, and Replace elements with Array.splice()](https://appendto.com/2016/04/insert-remove-replace-elements-array-splice/)
+- [Angular 2 fundamentals](https://egghead.io/courses/angular-2-fundamentals)

@@ -104,4 +104,4 @@ sortTable(sorter: string) {
 
 ## Project Management
 1. I used Github projects to keep track of my work. [Boards](https://github.com/angelitaooo/yuxi-project/projects)
-2. I created a pull request for each "chunk" of work. I was easier for me to keep track of the progress using pull requests. [Pull Requests](https://github.com/angelitaooo/yuxi-project/pulls?utf8=%E2%9C%93&q=)
+2. I created a pull request for each "chunk" of work. It was easier for me to keep track of the progress using pull requests. [Pull Requests](https://github.com/angelitaooo/yuxi-project/pulls?utf8=%E2%9C%93&q=)
